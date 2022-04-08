@@ -48,7 +48,7 @@ transform: rotateY(180deg);
 
 .aboutBlackBoard, .aboutBlackBoardBack{
   background-color: #333;
-  font-family: 'Grape Nuts', cursive;
+  font-family: 'Quicksand', sans-serif;
   max-width: 50rem;
   padding: 1rem;
   text-align: center;
@@ -63,6 +63,10 @@ transform: rotateY(180deg);
   backface-visibility: hidden;
 }
 
+.aboutBlackBoard h3{
+  font-family: 'Grape Nuts', cursive;
+}
+
 .aboutBlackBoardBack{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -72,4 +76,33 @@ transform: rotateY(180deg);
   text-align: center;
   margin: auto;
   font-size: 26px;
+}
+
+.skills{
+color: #fff;
+text-align: center;
+margin-top: 10rem;
+font-family: 'Grape Nuts', cursive;
+}
+.skills h3{
+  font-size: 32px;
+}
+.skillList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 5rem;
+}
+.skillList li{
+  margin: .75rem;
+  font-size: 23px;
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 1rem;
+  height: 25px;
+}
+.skillList li:hover{
+  background-color: rgb(223, 223, 223) ;
+  color: #333;
+  border: 1px solid #282c34;
+  height: 25px;
 }
