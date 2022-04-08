@@ -1,0 +1,75 @@
+/* .aboutBlackBoard{
+  background-color: #333;
+  font-family: 'Grape Nuts', cursive;
+  max-width: 50rem;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  border: solid white;
+  margin-top: 1rem;
+} */
+.aboutBlackBoard h3{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+.aboutBlackBoard p{
+  color: white;
+  font-size: 20px;
+}
+
+.flip-card{
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+}
+.flip-card:hover .flip-card-inner{
+transform: rotateY(180deg);
+}
+
+
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.aboutBlackBoardBack{
+background-color: #333;
+color: white;
+transform: rotateY(180deg);
+}
+
+.aboutBlackBoard, .aboutBlackBoardBack{
+  background-color: #333;
+  font-family: 'Grape Nuts', cursive;
+  max-width: 50rem;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  border: solid white;
+  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.aboutBlackBoardBack{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.aboutBlackBoardBack div{
+  width: 33.3%;
+  text-align: center;
+  margin: auto;
+  font-size: 26px;
+}
