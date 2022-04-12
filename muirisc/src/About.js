@@ -1,27 +1,38 @@
 import "./About.css";
-const About = () => {
+import {useState} from "react";
+import GitHubO from "./GitHubOrange.svg";
+import GitHubW from "./GitHub_White.svg"
 
+
+const About = () => {
+const [card, setCard] = useState(true)
+const[git, setGit] = useState(`${GitHubW}`)
+
+const manageCard = () =>{
+  setCard(!card)
+}
 
   return(
     <section className="about">
       <div className="flip-card">
-  <div className="flip-card-inner"> 
+  <div className={card ? "flip-card-inner" : "flipped-card-inner"} onClick={manageCard}> 
 
       <div className="aboutBlackBoard">
         <h3> About Me</h3>
-        <p>I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms.</p>
-        <p>Lorem Ipsum ... </p>
+        <p>I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms. I love frontend coding and design and how the field is constantly evolving.</p>
+        <p>Flip this card for my contact info! </p>
     </div>
 
     <div className="aboutBlackBoardBack">
       <div>
-        <p>LinkedIn</p>
+        <a href="https://www.linkedin.com/in/michael-vanaman/"><p>LinkedIn</p></a>
         </div>
         <div>
-          <p>Github</p>
+        <a href="https://github.com/muirisc"><img src={git} href="https://github.com/muirisc" alt="GitHub Logo" onMouseOver={()=>setGit(`${GitHubO}`)} onMouseOut={()=>setGit(`${GitHubW}`)} />
+          <p>Github</p></a>
           </div>
           <div>
-            <p>Medium</p>
+            <a href="mailto:muirisc07@gmail.com"><p>Email</p></a>
             </div>
     </div>
 </div>

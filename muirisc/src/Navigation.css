@@ -13,8 +13,8 @@ nav li{
   padding: 0rem 2rem 1rem 2rem;
 }
 
-nav li:hover{
-  background-color: orchid;
+nav li a:hover{
+  color: #fff;
 }
 
 nav li a{

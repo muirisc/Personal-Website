@@ -4,10 +4,15 @@ import './index.css';
 import About from './About';
 import reportWebVitals from './reportWebVitals';
 import Navigation from "./Navigation";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
+
 ReactDOM.render(
   <React.StrictMode>
     <Navigation />
     <About />
+    <Gallery />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
