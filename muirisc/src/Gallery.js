@@ -3,6 +3,7 @@ import { useState } from "react";
 import ClicknPlay from "./Screen Shot 2022-04-08 at 2.26.11 PM.png";
 import WallStreet from "./Screen Shot 2022-04-08 at 3.44.31 PM.png";
 
+
 const Gallery = () => {
   const [currentImages, setCurrentImages] = useState(0);
 

@@ -36,7 +36,7 @@ height: 100%;
 text-align: center;
 transition: transform 0.6s;
 transform-style: preserve-3d;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 transform: rotateY(180deg);
 }
 .flip-card-inner{
@@ -46,7 +46,7 @@ transform: rotateY(180deg);
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .aboutBlackBoardBack{
@@ -91,6 +91,15 @@ transform: rotateY(180deg);
 color:#fff;
 text-decoration: none;
 
+}
+.aboutBlackBoardBack a p{
+  text-align: center;
+}
+.aboutBlackBoardBack div a img{
+  align-content: center;
+  margin: auto;
+  
+  
 }
 .imageCarousel p{
   color: #fff;

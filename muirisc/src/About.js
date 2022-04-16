@@ -2,11 +2,14 @@ import "./About.css";
 import {useState} from "react";
 import GitHubO from "./GitHubOrange.svg";
 import GitHubW from "./GitHub_White.svg"
+import LinkedInO from "./linked_in.svg"
+import LinkedInW from "./linkedin_white.svg";
 
 
 const About = () => {
 const [card, setCard] = useState(true)
 const[git, setGit] = useState(`${GitHubW}`)
+const[linkedIn, setLinkedIn] = useState(`${LinkedInW}`)
 
 const manageCard = () =>{
   setCard(!card)
@@ -25,7 +28,8 @@ const manageCard = () =>{
 
     <div className="aboutBlackBoardBack">
       <div>
-        <a href="https://www.linkedin.com/in/michael-vanaman/"><p>LinkedIn</p></a>
+        <a href="https://www.linkedin.com/in/michael-vanaman/"><img src={linkedIn} alt="LinkedIn Logo" onMouseOver={()=>setLinkedIn(`${LinkedInO}`)} onMouseLeave={()=>setLinkedIn(`${LinkedInW}`)}/>
+        <p>LinkedIn</p></a>
         </div>
         <div>
         <a href="https://github.com/muirisc"><img src={git} href="https://github.com/muirisc" alt="GitHub Logo" onMouseOver={()=>setGit(`${GitHubO}`)} onMouseOut={()=>setGit(`${GitHubW}`)} />
