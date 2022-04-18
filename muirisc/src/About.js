@@ -4,6 +4,7 @@ import GitHubO from "./GitHubOrange.svg";
 import GitHubW from "./GitHub_White.svg"
 import LinkedInO from "./linked_in.svg"
 import LinkedInW from "./linkedin_white.svg";
+import Mail from "./mail-icon-white.svg";
 
 
 const About = () => {
@@ -36,7 +37,7 @@ const manageCard = () =>{
           <p>Github</p></a>
           </div>
           <div>
-            <a href="mailto:muirisc07@gmail.com"><p>Email</p></a>
+            <a href="mailto:muirisc07@gmail.com"><img src={Mail} alt="mail icon" /><p>Email</p></a>
             </div>
     </div>
 </div>

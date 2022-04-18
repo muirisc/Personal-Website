@@ -63,7 +63,7 @@ transform: rotateY(180deg);
   text-align: center;
   margin: auto;
   border-radius: 5px;
-  border: solid white;
+  border: solid rgb(169, 93, 1);
   margin-top: 3rem;
   position: absolute;
   width: 100%;
