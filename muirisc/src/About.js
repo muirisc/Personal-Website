@@ -16,14 +16,16 @@ const manageCard = () =>{
   setCard(!card)
 }
 
+
+
   return(
     <section className="about">
       <div className="flip-card">
   <div className={card ? "flip-card-inner" : "flipped-card-inner"} onClick={manageCard}> 
 
       <div className="aboutBlackBoard">
-        <h3> About Me</h3>
-        <p>I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms. I love frontend coding and design and how the field is constantly evolving.</p>
+        <h3>Welcome!</h3>
+        <p>My name is Michael Vanaman and this is my website. I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms. I love coding, front-end design, and how the tech industry is constantly evolving.</p>
         <p>Flip this card for my contact info! </p>
     </div>
 
@@ -46,16 +48,18 @@ const manageCard = () =>{
     <h3> Skills</h3>
     <div className="skillList">
     
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Ruby</li>
-        <li>Python</li>
-        <li>Photoshop</li>
-        <li>SQL</li>
-        <li>TypeScript</li>
-        <li>React.js</li>
-        <li>Ruby on Rails</li>
+        <li style={{backgroundColor: "#FFA500"}}>HTML</li>
+        <li style={{backgroundColor: "#264de4"}}>CSS</li>
+        <li style={{backgroundColor: "#FFFF00"}}>JavaScript</li>
+        <li style={{backgroundColor: "#820c02"}}>Ruby</li>
+        <li style={{backgroundColor: "#4B8BBE"}}>Python</li>
+        <li style={{backgroundColor: "#40D0FB"}}>Adobe Photoshop</li>
+        <li style={{backgroundColor: "#0064a5"}}>SQL</li>
+        <li style={{backgroundColor: "#3178C6"}}>TypeScript</li>
+        <li style={{backgroundColor: "#61DBFB"}}>React.js</li>
+        <li style={{backgroundColor: "#CC0000"}}>Ruby on Rails</li>
+        <li style={{backgroundColor: "#336633"}}>Node.js</li>
+        <li style={{backgroundColor: "#ffffff"}}>GitHub</li>
         {/* <li>GitHub</li>
         <li></li>
         <li>Writing</li> */}

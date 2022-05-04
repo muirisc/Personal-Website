@@ -18,9 +18,62 @@ nav li a:hover{
 }
 
 nav li a{
-  font-size: 20px;
+  font-size: 26px;
   color: orange;
   font-family: 'Grape Nuts', cursive;
   font-weight: 700;
   text-decoration: none;
 }
+
+burger-container{
+  position: relative;
+  margin: 200px auto;
+  width: 100px;
+}
+
+burger-box{
+  cursor: pointer;
+  display: block;
+}
+
+burger-box span{
+  background-color: #fff;
+  display: block;
+  width: 100px;
+  height: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+nav ul li a{
+  line-height: 14px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+width: 100%;
+}
+@media only screen and (mind-width: 25em){
+
+}
+@media only screen and (mind-width: 38em){
+
+}
+@media only screen and (mind-width: 60em){
+
+}
+
+

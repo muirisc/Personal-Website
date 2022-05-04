@@ -12,8 +12,14 @@ const Navigation = () => {
         <li><a href="/About">About</a></li>
         <li><a id="gallery"href="/gallery">Work</a></li>
         <li><a href="/Contact">Contact</a></li>
-
       </ul>
+  <div burger-container>
+    <div burger-box>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+  </div>
   </div>
     </nav>
   )
