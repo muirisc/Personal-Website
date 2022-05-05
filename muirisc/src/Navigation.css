@@ -17,13 +17,13 @@ nav li a:hover{
   color: #fff;
 }
 
-nav li a{
-  font-size: 26px;
+/* nav li a{
+  font-size: 32px;
   color: orange;
-  font-family: 'Grape Nuts', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   text-decoration: none;
-}
+} */
 
 burger-container{
   position: relative;
@@ -49,7 +49,11 @@ burger-box span{
 
 nav ul li a{
   line-height: 14px;
-  font-size: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: orange;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
   text-decoration: none;
 }
 

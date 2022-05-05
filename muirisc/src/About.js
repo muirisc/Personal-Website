@@ -18,8 +18,9 @@ const manageCard = () =>{
 
 
 
+
   return(
-    <section className="about">
+    <section className="about" id="About">
       <div className="flip-card">
   <div className={card ? "flip-card-inner" : "flipped-card-inner"} onClick={manageCard}> 
 
@@ -31,11 +32,11 @@ const manageCard = () =>{
 
     <div className="aboutBlackBoardBack">
       <div>
-        <a href="https://www.linkedin.com/in/michael-vanaman/"><img src={linkedIn} alt="LinkedIn Logo" onMouseOver={()=>setLinkedIn(`${LinkedInO}`)} onMouseLeave={()=>setLinkedIn(`${LinkedInW}`)}/>
+        <a href="https://www.linkedin.com/in/michael-vanaman/" rel="noreferrer" target="_blank"><img src={linkedIn} alt="LinkedIn Logo" onMouseOver={()=>setLinkedIn(`${LinkedInO}`)} onMouseLeave={()=>setLinkedIn(`${LinkedInW}`)}/>
         <p>LinkedIn</p></a>
         </div>
         <div>
-        <a href="https://github.com/muirisc"><img src={git} href="https://github.com/muirisc" alt="GitHub Logo" onMouseOver={()=>setGit(`${GitHubO}`)} onMouseOut={()=>setGit(`${GitHubW}`)} />
+        <a href="https://github.com/muirisc" rel="noreferrer" target="_blank"><img src={git} href="https://github.com/muirisc" alt="GitHub Logo" onMouseOver={()=>setGit(`${GitHubO}`)} onMouseOut={()=>setGit(`${GitHubW}`)}/>
           <p>Github</p></a>
           </div>
           <div>
@@ -47,7 +48,6 @@ const manageCard = () =>{
     <div className="skills">
     <h3> Skills</h3>
     <div className="skillList">
-    
         <li style={{backgroundColor: "#FFA500"}}>HTML</li>
         <li style={{backgroundColor: "#264de4"}}>CSS</li>
         <li style={{backgroundColor: "#FFFF00"}}>JavaScript</li>
@@ -60,11 +60,12 @@ const manageCard = () =>{
         <li style={{backgroundColor: "#CC0000"}}>Ruby on Rails</li>
         <li style={{backgroundColor: "#336633"}}>Node.js</li>
         <li style={{backgroundColor: "#ffffff"}}>GitHub</li>
-        {/* <li>GitHub</li>
-        <li></li>
-        <li>Writing</li> */}
-      
       </div>
+    </div>
+    <div style={{backgroundcolor: "blue"}}>
+      {/* <a href="src/Michael_Vanaman_Resume_NewFinal.pdf"><h3>Click Here For My Resume</h3></a> */}
+      {/* <embed src="src/Michael_Vanaman_Resume_NewFinal.pdf" width=100% /> */}
+      <object data="src/Michael_Vanaman_Resume_NewFinal.pdf" type="application/pdf" width="100%" height="100%" alt="pdf "><h3>Click Here For My Resume</h3></object>
     </div>
 
     </section>
