@@ -1,21 +1,25 @@
-import "./About.css";
+import "./CSS/About.css";
 import {useState} from "react";
 import GitHubO from "./GitHubOrange.svg";
 import GitHubW from "./GitHub_White.svg"
 import LinkedInO from "./linked_in.svg"
 import LinkedInW from "./linkedin_white.svg";
 import Mail from "./mail-icon-white.svg";
+import CodeLogos from "./logo_everything_code.png"
 
 
 const About = () => {
 const [card, setCard] = useState(true)
 const[git, setGit] = useState(`${GitHubW}`)
 const[linkedIn, setLinkedIn] = useState(`${LinkedInW}`)
+const[active, setActive] = useState(false)
 
 const manageCard = () =>{
   setCard(!card)
 }
-
+const setColor=()=>{
+setActive(!active)
+}
 
 
 
@@ -48,7 +52,29 @@ const manageCard = () =>{
     <div className="skills">
     <h3> Skills</h3>
     <div className="skillList">
-        <li style={{backgroundColor: "#FFA500"}}>HTML</li>
+      <div>
+      <img className="logos" src={CodeLogos} alt="coding based logos collage"/>
+       </div> 
+       <div className="skillBoxes">
+         <ul>
+       {active ? <li onMouseEnter={setColor} style={{backgroundColor: "#fff"}}>HTML</li> : <li onMouseLeave={setColor} style={{backgroundColor: "#fff"}}>HTML</li>}
+       {/* {active ? <li onMouseEnter={setColor} style={{backgroundColor: "#264de4"}}>HTML</li> : <li onMouseLeave={setColor} style={{backgroundColor: "#fff"}}>HTML</li>} */}
+        <li style={{backgroundColor: "#fff"}}>CSS</li>
+        <li style={{backgroundColor: "#fff"}}>JavaScript</li>
+        <li style={{backgroundColor: "#fff"}}>Ruby</li>
+        <li style={{backgroundColor: "#fff"}}>Python</li>
+        <li style={{backgroundColor: "#fff"}}>Adobe Photoshop</li>
+        <li style={{backgroundColor: "#fff"}}>SQL</li>
+        <li style={{backgroundColor: "#fff"}}>TypeScript</li>
+        <li style={{backgroundColor: "#fff"}}>React.js</li>
+        <li style={{backgroundColor: "#fff"}}>Ruby on Rails</li>
+        <li style={{backgroundColor: "#fff"}}>Node.js</li>
+        <li style={{backgroundColor: "#fff"}}>GitHub</li>
+         </ul>
+        </div>
+       
+       
+       {/* <li style={{backgroundColor: "#FFA500"}}>HTML</li>
         <li style={{backgroundColor: "#264de4"}}>CSS</li>
         <li style={{backgroundColor: "#FFFF00"}}>JavaScript</li>
         <li style={{backgroundColor: "#820c02"}}>Ruby</li>
@@ -59,13 +85,13 @@ const manageCard = () =>{
         <li style={{backgroundColor: "#61DBFB"}}>React.js</li>
         <li style={{backgroundColor: "#CC0000"}}>Ruby on Rails</li>
         <li style={{backgroundColor: "#336633"}}>Node.js</li>
-        <li style={{backgroundColor: "#ffffff"}}>GitHub</li>
+        <li style={{backgroundColor: "#ffffff"}}>GitHub</li> */}
       </div>
     </div>
     <div style={{backgroundcolor: "blue"}}>
       {/* <a href="src/Michael_Vanaman_Resume_NewFinal.pdf"><h3>Click Here For My Resume</h3></a> */}
       {/* <embed src="src/Michael_Vanaman_Resume_NewFinal.pdf" width=100% /> */}
-      <object data="src/Michael_Vanaman_Resume_NewFinal.pdf" type="application/pdf" width="100%" height="100%" alt="pdf "><h3>Click Here For My Resume</h3></object>
+      {/* <object data="src/Michael_Vanaman_Resume_NewFinal.pdf" type="application/pdf" width="100%" height="100%" alt="pdf "><h3>Click Here For My Resume</h3></object> */}
     </div>
 
     </section>

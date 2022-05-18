@@ -1,8 +1,8 @@
 .gallery{
-  margin-bottom: 2rem;
+  margin-bottom: 13rem;
 }
 .gallery h3{
-  font-size: 31.25px;
+  font-size: 35px;
   color:#da6c1a;
   text-align: center;
   font-family: 'Grape Nuts', cursive;
@@ -16,33 +16,19 @@ font-size: 20px;
 }
 
 .imageCarousel{
-/* flex-direction: row;
-justify-content: space-evenly; */
-/* display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-  overflow: hidden; */
-  /* background-color: #fff; */
   position: relative;
   height: 80vh;
   display: flex;
   justify-content: center;
 padding-top: 2rem;
-  /* align-items: center; */
-  /* margin-bottom: 20rem; */
-  /* max-height: 20rem; */
 }
 
-
-/* .imageBox button{
-  position: absolute;
-  top: 30%;
-  right: 32px;
-  color: #fff;
-} */
 .image{
-height: 500px;
+height: 85%;
 width: inherit;
 border-radius: 5px;
+align-content: center;
+margin: auto;
 }
 
 .arrowLeft{
@@ -50,7 +36,7 @@ border-radius: 5px;
   height: 4rem;
   width: 2rem;
   top: 45%;
-  left: 200px;
+  left: 5%;
   cursor: pointer;
   background-color: #fff;
 }
@@ -58,7 +44,7 @@ border-radius: 5px;
   position: absolute;
   height: 4rem;
   width: 2rem;
-  right: 200px;
+  right: 5%;
   top: 45%;
   cursor: pointer;
   background-color: #fff;
@@ -86,4 +72,43 @@ border-radius: 5px;
 }
 .galleryDescrip{
   margin-bottom: 2rem;
+  font-size: 20px;
 }
+
+h4{
+  font-size: 20px; 
+}
+
+
+@media all and (max-width: 800px) {
+  .image{
+    height: 35%;
+    width: inherit;
+    border-radius: 5px;
+    align-content: center;
+    margin: auto;
+    }
+  }
+  @media all and (max-width: 1500px) {
+    .image{
+      height: 50%;
+      width: inherit;
+      border-radius: 5px;
+      align-content: center;
+      margin: auto;
+      }
+  
+    }
+    @media all and (max-width: 2000px) {
+      .image{
+        height: 85%;
+        width: inherit;
+        border-radius: 5px;
+        align-content: center;
+        margin: auto;
+        }
+    
+      }
+
+
+
