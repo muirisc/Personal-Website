@@ -1,6 +1,5 @@
 .gallery{
   margin-bottom: 13rem;
-  
 
 }
 
@@ -28,6 +27,7 @@
   font-family: 'Grape Nuts', cursive;
   /* padding: 2rem; */
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .galleryIntro p{
@@ -37,7 +37,7 @@ font-family: 'Quicksand', sans-serif;
 font-size: 20px;
 background-color: rgb(249, 238, 214);
 margin-top: 0rem;
-margin-bottom: 4rem;
+margin-bottom: 0rem;
 font-size: 20px;
 color: #da6c1a;
 padding-bottom: 1rem;
@@ -48,7 +48,7 @@ padding-bottom: 1rem;
   height: 80vh;
   display: flex;
   justify-content: center;
-padding-top: 2rem;
+padding-top: 0rem;
 }
 
 .image{
@@ -77,7 +77,6 @@ margin-top: 5rem;
   top: 45%;
   cursor: pointer;
   background-color: #da6c1a;
-  
 }
 
 .arrowLeft:hover{
@@ -109,7 +108,13 @@ h4{
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
+  .galleryIntroH3{
+    font-size: 30px;
+  }
+  .projectName{
+    font-size: 30px;
+  }
   .image{
     height: 35%;
     width: inherit;
@@ -118,7 +123,7 @@ h4{
     margin: auto;
     }
   }
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1305px) {
     .image{
       height: 50%;
       width: inherit;
@@ -126,9 +131,27 @@ h4{
       align-content: center;
       margin: auto;
       }
+      .arrowLeft{
+        position: absolute;
+        height: 4rem;
+        width: 2rem;
+        top: 35%;
+        left: 20%;
+        cursor: pointer;
+        background-color: #da6c1a;
+      }
+      .arrowRight{
+        position: absolute;
+        height: 4rem;
+        width: 2rem;
+        right: 20%;
+        top: 35%;
+        cursor: pointer;
+        background-color: #da6c1a;
+      }
   
     }
-    @media all and (max-width: 2000px) {
+    /* @media all and (max-width: 2000px) {
       .image{
         height: 85%;
         width: inherit;
@@ -137,7 +160,7 @@ h4{
         margin: auto;
         }
     
-      }
+      } */
 
 
 

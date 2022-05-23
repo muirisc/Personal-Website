@@ -1,7 +1,7 @@
 import "../CSS/Gallery.css";
 import { useState } from "react";
 import ClicknPlay from "../Screen Shot 2022-04-08 at 2.26.11 PM.png";
-import WallStreet from "../Screen Shot 2022-04-08 at 3.44.31 PM.png";
+import WallStreet from "../Screen Shot 2022-05-23 at 2.54.33 PM.png";
 import Silverline from "../Screen Shot 2022-05-22 at 9.01.42 PM.png";
 
 
