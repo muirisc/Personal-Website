@@ -1,11 +1,11 @@
-import "./CSS/About.css";
+import "../CSS/About.css";
 import {useState} from "react";
-import GitHubO from "./GitHubOrange.svg";
-import GitHubW from "./GitHub_White.svg"
-import LinkedInO from "./linked_in.svg"
-import LinkedInW from "./linkedin_white.svg";
-import Mail from "./mail-icon-white.svg";
-import CodeLogos from "./logo_everything_code.png"
+import GitHubO from "../GitHubOrange.svg";
+import GitHubW from "../GitHub_White.svg"
+import LinkedInO from "../linked_in.svg"
+import LinkedInW from "../linkedin_white.svg";
+import Mail from "../mail-icon-white.svg";
+
 
 
 const About = () => {
@@ -30,7 +30,7 @@ setActive(!active)
 
       <div className="aboutBlackBoard">
         <h3>Welcome!</h3>
-        <p>My name is Michael Vanaman and this is my website. I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms. I love coding, front-end design, and how the tech industry is constantly evolving.</p>
+        <p>I am Michael Vanaman and this is my website. I am a software engineer and writer. My passion is finding unique solutions to problems and breaking down complicated subject matter into more easily understandable forms. I love coding, front-end design, and how the tech industry is constantly evolving.</p>
         <p>Flip this card for my contact info! </p>
     </div>
 
@@ -49,29 +49,7 @@ setActive(!active)
     </div>
 </div>
   </div>
-    <div className="skills">
-    <h3> Skills</h3>
-    <div className="skillList">
-      <div>
-      <img className="logos" src={CodeLogos} alt="coding based logos collage"/>
-       </div> 
-       <div className="skillBoxes">
-         <ul>
-       {active ? <li onMouseEnter={setColor} style={{backgroundColor: "#fff"}}>HTML</li> : <li onMouseLeave={setColor} style={{backgroundColor: "#fff"}}>HTML</li>}
-       {/* {active ? <li onMouseEnter={setColor} style={{backgroundColor: "#264de4"}}>HTML</li> : <li onMouseLeave={setColor} style={{backgroundColor: "#fff"}}>HTML</li>} */}
-        <li style={{backgroundColor: "#fff"}}>CSS</li>
-        <li style={{backgroundColor: "#fff"}}>JavaScript</li>
-        <li style={{backgroundColor: "#fff"}}>Ruby</li>
-        <li style={{backgroundColor: "#fff"}}>Python</li>
-        <li style={{backgroundColor: "#fff"}}>Adobe Photoshop</li>
-        <li style={{backgroundColor: "#fff"}}>SQL</li>
-        <li style={{backgroundColor: "#fff"}}>TypeScript</li>
-        <li style={{backgroundColor: "#fff"}}>React.js</li>
-        <li style={{backgroundColor: "#fff"}}>Ruby on Rails</li>
-        <li style={{backgroundColor: "#fff"}}>Node.js</li>
-        <li style={{backgroundColor: "#fff"}}>GitHub</li>
-         </ul>
-        </div>
+
        
        
        {/* <li style={{backgroundColor: "#FFA500"}}>HTML</li>
@@ -86,8 +64,7 @@ setActive(!active)
         <li style={{backgroundColor: "#CC0000"}}>Ruby on Rails</li>
         <li style={{backgroundColor: "#336633"}}>Node.js</li>
         <li style={{backgroundColor: "#ffffff"}}>GitHub</li> */}
-      </div>
-    </div>
+
     <div style={{backgroundcolor: "blue"}}>
       {/* <a href="src/Michael_Vanaman_Resume_NewFinal.pdf"><h3>Click Here For My Resume</h3></a> */}
       {/* <embed src="src/Michael_Vanaman_Resume_NewFinal.pdf" width=100% /> */}

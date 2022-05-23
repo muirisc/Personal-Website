@@ -1,5 +1,5 @@
 .footer{
-  border-top: 1px solid orange;
+  /* border-top: 1px solid orange; */
   /* position: absolute; */
   bottom: 0;
   left: 0;
@@ -12,6 +12,9 @@
   /* float: left; */
   font-family: "Quicksand" sans-serif;
   color: #fff;
+  background-color: rgb(249, 238, 214);
+  color: #333;
+  padding: .5rem;
 }
 
 .footer p{

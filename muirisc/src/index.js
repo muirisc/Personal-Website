@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import About from './About';
+import About from './Components/About';
 import reportWebVitals from './reportWebVitals';
-import Navigation from "./Navigation";
-import Gallery from "./Gallery";
-import Footer from "./Footer";
+import Navigation from "./Components/Navigation";
+import Gallery from "./Components/Gallery";
+import Footer from "./Components/Footer";
+import Skills from "./Components/Skills";
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="contentContainer">
     <Navigation />
     <About />
+    <Skills />
     <Gallery />
     </div>
     <Footer />

@@ -1,7 +1,8 @@
-import "./CSS/Gallery.css";
+import "../CSS/Gallery.css";
 import { useState } from "react";
-import ClicknPlay from "./Screen Shot 2022-04-08 at 2.26.11 PM.png";
-import WallStreet from "./Screen Shot 2022-04-08 at 3.44.31 PM.png";
+import ClicknPlay from "../Screen Shot 2022-04-08 at 2.26.11 PM.png";
+import WallStreet from "../Screen Shot 2022-04-08 at 3.44.31 PM.png";
+import Silverline from "../Screen Shot 2022-05-22 at 9.01.42 PM.png";
 
 
 const Gallery = () => {
@@ -22,6 +23,11 @@ const Gallery = () => {
       description:
         "A database to look up games and see on what platforms they may be played along with reviews and a brief description. The site includes a filter and allows the user to post their own games to the databse.",
     },
+    {
+      name: "Silverline Tattoo & Body Piercing",
+      image: `${Silverline}`,
+      description: "Created website for leading tattoo shop in Ottawa, Ontario. Increased SEO."
+    }
   ];
   const length = imageBank.length;
 
@@ -44,7 +50,7 @@ const Gallery = () => {
   }
   return (
     <div className="gallery">
-      <h3> Gallery</h3>
+      <h3 className="galleryIntroH3"> Gallery</h3>
       <div className="galleryIntro">
         <p>
           Below are just some of the projects I have created. Feel free to
@@ -67,7 +73,7 @@ const Gallery = () => {
             >
               {index === currentImages && (
                 <>
-                  <h3>{image.name}</h3>
+                  <h3 className="projectName">{image.name}</h3>
                   <img
                     src={image.image}
                     alt="front page screenshot of website"

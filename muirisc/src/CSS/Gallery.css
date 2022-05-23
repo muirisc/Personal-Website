@@ -1,11 +1,33 @@
 .gallery{
   margin-bottom: 13rem;
+  
+
 }
-.gallery h3{
-  font-size: 35px;
+
+.galleryIntroH3{
+  font-size: 45px;
   color:#da6c1a;
   text-align: center;
   font-family: 'Grape Nuts', cursive;
+  background-color: rgb(249, 238, 214);
+  padding: 2rem;
+}
+.gallery h3{
+  font-size: 45px;
+  color:#da6c1a;
+  text-align: center;
+  font-family: 'Grape Nuts', cursive;
+  /* padding: 2rem; */
+  margin-bottom: 0rem;
+}
+
+.projectName{
+  font-size: 45px;
+  color:#da6c1a;
+  text-align: center;
+  font-family: 'Grape Nuts', cursive;
+  /* padding: 2rem; */
+  margin-bottom: 2rem;
 }
 
 .galleryIntro p{
@@ -13,6 +35,12 @@ color:#fff;
 text-align: center;
 font-family: 'Quicksand', sans-serif;
 font-size: 20px;
+background-color: rgb(249, 238, 214);
+margin-top: 0rem;
+margin-bottom: 4rem;
+font-size: 20px;
+color: #da6c1a;
+padding-bottom: 1rem;
 }
 
 .imageCarousel{
@@ -29,6 +57,7 @@ width: inherit;
 border-radius: 5px;
 align-content: center;
 margin: auto;
+margin-top: 5rem;
 }
 
 .arrowLeft{
@@ -38,7 +67,7 @@ margin: auto;
   top: 45%;
   left: 5%;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #da6c1a;
 }
 .arrowRight{
   position: absolute;
@@ -47,7 +76,7 @@ margin: auto;
   right: 5%;
   top: 45%;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #da6c1a;
   
 }
 
