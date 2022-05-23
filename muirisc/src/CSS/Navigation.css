@@ -10,7 +10,7 @@ nav{
 nav li{
   list-style: none;
   float: right;
-  margin: 0rem 4rem .5rem 0rem;
+  margin: 0rem 2rem .5rem 0rem;
   padding: 0rem 2rem 1rem 2rem;
 }
 
@@ -21,35 +21,38 @@ nav li a:hover{
 
 .socialMedia{
   float: left;
-  position: absolute;
-  left: 600px;
+  margin-left: 2rem;
+  /* position: absolute; */
+  /* left: 600px; */
+  width: 200px;
+  height: 25px;
 }
 .socialMedia img{
   height: 25px;
   width: inherit;
-  padding-right: 50px;
+  /* padding-right: 20px; */
+  /* margin-left: 2rem; */
+}
+.socialMedia a{
+  padding-right: 20px;
 }
 
 .burger-container{
-  position: relative;
+  /* position: relative; */
   /* margin: 200px; */
-  width: 100px;
+  /* width: 100px; */
+  float: right;
+  margin-top: 0rem;
+  padding-top: 0rem;
 }
 
-.burger-box{
-  cursor: pointer;
-  display: block;
-  height: 200px;
-  margin-top: 20px;
-
-}
 
 nav span{
   background-color: #da6c1a;
   display: block;
-  width: 50px;
-  height: 5px;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 2px;
+  margin-bottom: 5px;
   position: relative;
   top: 0;
   transition: all ease-in-out 0.4s;
@@ -75,17 +78,55 @@ nav ul li a::after{
   transition: 0.5s;
 }
 
+.burger-box{
+  display: none;
+}
+.burger-X{
+  display: none;
+}
+
 nav ul li a:hover::after{
 width: 100%;
 }
-@media only screen and (mind-width: 25em){
+@media only screen and (max-width: 937px){
+  .burger-box{
+    cursor: pointer;
+    display:initial;
+    /* height: 200px; */
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  .burger-X{
+    color: #da6c1a;
+    font-size: medium;
+    display: block;
+    float: right;
+    margin-right: 1.5rem;
+  }
+  .sideBar{
+      width: 2rem;
+      height: 0.25rem;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+  }
+
+  nav ul li a{
+    display: none;
+
+  }
+  nav ul li{
+    margin: 0;
+padding: 0;
+  }
 
 }
-@media only screen and (mind-width: 38em){
+/* @media only screen and (mind-width: 38em){
 
 }
 @media only screen and (mind-width: 60em){
 
-}
+} */
 
 

@@ -180,17 +180,66 @@ margin: auto;
   grid-template-columns: 1fr 1fr;
 }
 
-  /* .skillList .active1{
-    margin: .2rem;
-    font-size: 22px;
-    list-style: none;
-    padding: .75rem;
-    height: 20px;
-    width: 300px;
-    border: 1px solid #333;
-    color: rgb(23, 22, 22);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: #FFA500;
-  } */
 
+
+@media only screen and (max-width: 680px){
+  .aboutBlackBoard, .aboutBlackBoardBack{
+    background-color: #333;
+    margin-top: 10rem;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 30rem;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    border: solid rgb(169, 93, 1);
+    margin-top: 7rem;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+@media only screen and (max-width: 750px){
+  .aboutBlackBoard, .aboutBlackBoardBack{
+    background-color: #333;
+    margin-top: 10rem;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 30rem;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    border: solid rgb(169, 93, 1);
+    margin-top: 7rem;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .aboutBlackBoard p{
+    color: white;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 60em){
+  .aboutBlackBoard, .aboutBlackBoardBack{
+    background-color: #333;
+    margin-top: 10rem;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 50rem;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    border: solid rgb(169, 93, 1);
+    margin-top: 7rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
