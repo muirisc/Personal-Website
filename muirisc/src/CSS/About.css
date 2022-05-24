@@ -22,6 +22,7 @@
 .aboutBlackBoard p{
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 .flip-card{
@@ -107,8 +108,7 @@ text-decoration: none;
 .aboutBlackBoardBack div a img{
   align-content: center;
   margin: auto;
-  
-  
+  height: 100px;
 }
 .imageCarousel p{
   color: #fff;

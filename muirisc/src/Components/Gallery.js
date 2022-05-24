@@ -57,9 +57,6 @@ const Gallery = () => {
           browse. Comments and suggestions are welcome!
         </p>
       </div>
-      {/* {imageBank.map((image) =>{
-    return(<h3>{image.name}</h3>)
-      })}  */}
       <div div className="imageCarousel">
         <a id="gallery"></a>
         <button onClick={previousSlide} className="arrowLeft">
